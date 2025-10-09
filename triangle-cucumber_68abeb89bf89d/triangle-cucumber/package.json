@@ -1,0 +1,21 @@
+{
+  "name": "triangle-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "triangle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "expect": "^30.1.1"
+  },
+  "devDependencies": {
+    "@cucumber/pretty-formatter": "^2.1.0",
+    "cucumber-html-reporter": "^7.2.0"
+  }
+}

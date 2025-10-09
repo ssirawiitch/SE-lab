@@ -1,0 +1,15 @@
+{
+  "name": "todo.spec.js_900091_17589635449406_(1)-827625-17599268913059",
+  "version": "1.0.0",
+  "description": "",
+  "main": "todo.spec.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0"
+  }
+}

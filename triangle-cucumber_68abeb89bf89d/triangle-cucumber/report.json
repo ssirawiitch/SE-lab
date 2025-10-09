@@ -1,0 +1,313 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "triangle-type-checker;determine-triangle-type",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Determine triangle type",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the triangle has sides 3, 3, and 3",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1162199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I check the triangle type",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result should be \"Equilateral\"",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 975999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "triangle-type-checker;determine-triangle-type",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Determine triangle type",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the triangle has sides 5, 5, and 3",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I check the triangle type",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result should be \"Isosceles\"",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 336300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "triangle-type-checker;determine-triangle-type",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Determine triangle type",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the triangle has sides 4, 5, and 6",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 456900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I check the triangle type",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result should be \"Scalene\"",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "triangle-type-checker;determine-triangle-type",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Determine triangle type",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the triangle has sides 1, 2, and 3",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I check the triangle type",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result should be \"Invalid\"",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 370599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "triangle-type-checker;determine-triangle-type",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Determine triangle type",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the triangle has sides 0, 5, and 5",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I check the triangle type",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result should be \"Invalid\"",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 296900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "triangle-type-checker;determine-triangle-type",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Determine triangle type",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the triangle has sides -1, 2, and 2",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 242200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I check the triangle type",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the result should be \"Invalid\"",
+            "match": {
+              "location": "features\\step_definitions\\triangle.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 348399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "triangle-type-checker",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Triangle Type Checker",
+    "tags": [],
+    "uri": "features\\triangle.feature"
+  }
+]

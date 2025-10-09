@@ -1,0 +1,16 @@
+{
+  "name": "jest_workshop-900091-17598245963611",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-coverage": "jest --watchAll --coverage"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

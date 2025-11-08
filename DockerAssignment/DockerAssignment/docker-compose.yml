@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  asset_mapping:
+    build: asset_mapping
+    ports:
+      - "27017:27017"
+    networks:
+      - app_network
+
+  asset_mapping_seed:
+    build: asset_mapping_seed
+    depends_on:
+      - asset_mapping
+    networks:
+      - app_network
+
+  asset_service:
+    build: asset_service
+    ports:
+      - "8008:8008"
+    depends_on:
+      - asset_mapping
+    environment:
+      - MONGO_HOST=asset_mapping
+      - PORT=8008
+    networks:
+      - app_network
+
+  users_service:
+    build: user_account_service
+    container_name: users_service
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+      - asset_service
+    environment:
+      - DATABASE_HOST=db
+      - PORT=80
+    networks:
+      - app_network
+
+  db:
+    build: user_data
+    networks:
+      - app_network
+
+# 🔹 สร้าง network ชื่อ app_network สำหรับทุก service
+networks:
+  app_network:
+    driver: bridge

@@ -3,17 +3,20 @@
 # base image node 17-alpine
 FROM node:17-alpine
 
-# โฟลเดอร์ทำงานใน container
+# set working directory
 WORKDIR /app
 
-# copy ไฟล์ทั้งหมดเข้า /app
-COPY . /app
+# copy package files first to leverage Docker cache and install only production deps
+COPY package*.json ./
 
-# ลง dependency
-RUN npm install
+# install only production dependencies to avoid building dev native modules (e.g. v8-debug)
+RUN npm install --only=production
 
-# service นี้ฟังที่ port 80 (ดูจาก docker-compose)
+# copy app source
+COPY . .
+
+# service listens on port 80 (as configured in docker-compose)
 EXPOSE 80
 
-# รัน app
+# run the app
 CMD ["node", "index.js"]
